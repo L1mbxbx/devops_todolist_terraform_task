@@ -6,7 +6,7 @@ variable "location" {
 variable "resource_group_name" {
   description = "The name of the resource group"
   type        = string
-  default = "mate-azure-task-12"
+  default     = "mate-azure-task-12"
 }
 
 variable "network_name" {
@@ -47,6 +47,5 @@ variable "public_ip_name" {
 
 variable "dns_label" {
   description = "The DNS label for the public IP"
-  default     = "matetask${random_integer.rand.result}"
   type        = string
 }

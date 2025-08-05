@@ -1,11 +1,11 @@
 output "public_ip" {
   description = "The public IP address of the load balancer"
-  value       = azurerm_public_ip.lb.ip_address
+  value       = azurerm_public_ip.public_ip.ip_address
 }
 
-output "public_ip_address_name" {
+output "public_ip_address_id" {
   description = "The name of the public IP address"
-  value       = azurerm_public_ip.public_ip.name
+  value       = azurerm_public_ip.public_ip.id
 }
 
 output "subnet_id" {

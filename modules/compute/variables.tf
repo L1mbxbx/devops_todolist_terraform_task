@@ -1,7 +1,7 @@
 variable "resource_group_name" {
   description = "The name of the resource group in which the virtual machine will be created."
   type        = string
-  default = "mate-azure-task-12"
+  default     = "mate-azure-task-12"
 }
 
 variable "location" {
