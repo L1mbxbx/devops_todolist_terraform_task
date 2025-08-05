@@ -41,7 +41,7 @@ variable "subnet_id" {
   type        = string
 }
 
-variable "public_ip_adress_id" {
+variable "public_ip_address_id" {
   description = "The ID of the public IP address associated with the virtual machine."
   type        = string
 }

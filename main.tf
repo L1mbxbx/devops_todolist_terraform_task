@@ -9,7 +9,7 @@ terraform {
 
 provider "azurerm" {
   features {}
-   subscription_id = "7b4ebbe8-4b86-45de-b81c-6f4119998725"
+  subscription_id = "7b4ebbe8-4b86-45de-b81c-6f4119998725"
 }
 
 resource "random_integer" "suffix" {
@@ -36,15 +36,15 @@ module "network" {
 }
 
 module "compute" {
-  source              = "./modules/compute"
-  location            = var.location
-  resource_group_name = var.resource_group_name
-  vm_name             = var.vm_name
-  subnet_id           = module.network.subnet_id
-  public_ip_adress_id = module.network.public_ip_address_id
-  vm_size             = var.vm_size
-  ssh_public_key      = var.ssh_key_public
-  admin_username      = var.admin_username
+  source               = "./modules/compute"
+  location             = var.location
+  resource_group_name  = var.resource_group_name
+  vm_name              = var.vm_name
+  subnet_id            = module.network.subnet_id
+  public_ip_address_id = module.network.public_ip_address_id
+  vm_size              = var.vm_size
+  ssh_public_key       = var.ssh_key_public
+  admin_username       = var.admin_username
 }
 
 module "storage" {
