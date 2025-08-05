@@ -13,7 +13,7 @@ variable "location" {
 variable "resource_group_name" {
   description = "The name of the resource group where the storage account will be created."
   type        = string
-  default     = "limbxtodolist-rg"
+  default     = "mate-azure-task-12"
 }
 
 variable "container_name" {
